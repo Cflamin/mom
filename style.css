@@ -7,9 +7,11 @@
 }
 
 body {
-  background-color: #000022;
+  background-color: #21320a;
   overflow: hidden;
   margin: 0;
+
+
 }
 
 .snow {
@@ -153,6 +155,9 @@ body {
   position: absolute;
   left: 50.1%;
   -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 200px;
+  -ms-perspective: 200px;
+  perspective: 200px;
   transform-style: preserve-3d;
   transition: 2s;
   transform-origin: left;
@@ -263,9 +268,9 @@ body {
   padding: 90px 10px;
   box-shadow: 25px 25px 35px rgba(0,0,0,0.3);
 }
-.inside>p{
+/* .inside>p{
   border-bottom: 10px dotted white;
-}
+} */
 a{
     color: #ffffff;
     font-family: "Poppins",sans-serif;
@@ -288,6 +293,10 @@ a>.fa{
 }
 
 @media screen and (max-width: 450px) {
+  body{
+    max-width: 450px;
+    margin: 0;
+  }
   a{
     font-size: 12px;
      padding:5px 8px 5px 8px;
